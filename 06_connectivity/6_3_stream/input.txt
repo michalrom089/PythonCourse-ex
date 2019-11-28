@@ -1,0 +1,6 @@
+#fields:date|TZ|custID|muID|tvID|acdID|logonID|ssn|AGENTDATA|agentName|modify|exception|start|stop|externalID
+#sort:date,TZ,custID,muID,tvID,acdID,logonID,ssn,AGENTDATA,agentName,modify,exception,start,stop,externalID
+
+10172019|Europe/Berlin|1|1|1200004|2|6891630|||Boche, Tanja|1571292959|Open|08:07|08:12|
+10172019|Europe/Berlin|1|1|1200004|2|6891630|||Boche, Tanja|1571293259|Open|08:15|08:20|
+10172019|Europe/Berlin|1|1|1200004|2|6891630|||Boche, Tanja|1571296863|Open|08:22|09:17|

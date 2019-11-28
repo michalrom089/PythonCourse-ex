@@ -1,0 +1,11 @@
+date,period,TZ,custID,muID,tvID,acdID,logonID,ssn,AGENTDATA,agentName,modify,totalAct,totalInAdh,totalOutAdh,totalSched,adhPct,externalID
+10072019,06:45,Europe/Stockholm,1,2004,2000002,2,6891200.0,,,"Ahlning, Hanna",1570399200,780,0,0,0,0.0,Hanna.Ahlning@Staples-solutions.com
+10072019,07:00,Europe/Stockholm,1,2004,2000002,2,6891200.0,,,"Ahlning, Hanna",1570399200,900,900,0,900,100.0,Hanna.Ahlning@Staples-solutions.com
+10072019,07:00,Europe/Stockholm,1,2004,2000052,2,,,,"Keturi, Alexander",1570399200,0,0,900,900,0.0,Alexander.Keturi@staples-solutions.com
+10072019,07:15,Europe/Stockholm,1,2000,2000018,2,6891234.0,,,"Hoikkala, Birgitta",1570399200,60,0,0,0,0.0,2000018
+10072019,07:15,Europe/Stockholm,1,2000,2000063,2,,,,"Apell, Kristoffer",1570399200,0,0,900,900,0.0,Kristoffer.Apell@staples-solutions.com
+10072019,06:45,Europe/Stockholm,1,2004,2000002,2,6891200.0,,,"Ahlning, Hanna",1570399200,780,0,0,0,0.0,Hanna.Ahlning@Staples-solutions.comHanna.Ahlning@Staples-solutions.com
+10072019,07:00,Europe/Stockholm,1,2004,2000002,2,6891200.0,,,"Ahlning, Hanna",1570399200,900,900,0,900,100.0,Hanna.Ahlning@Staples-solutions.com
+10072019,07:00,Europe/Stockholm,1,2004,2000052,2,,,,"Keturi, Alexander",1570399200,0,0,900,900,0.0,Alexander.Keturi@staples-solutions.com
+10072019,07:15,Europe/Stockholm,1,2000,2000018,2,6891234.0,,,"Hoikkala, Birgitta",1570399200,60,0,0,0,0.0,2000018
+10072019,07:15,Europe/Stockholm,1,2000,2000063,2,,,,"Apell, Kristoffer",1570399200,0,0,900,900,0.0,Kristoffer.Apell@staples-solutions.com

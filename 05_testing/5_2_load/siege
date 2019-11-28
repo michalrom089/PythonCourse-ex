@@ -1,0 +1,6 @@
+base=http://localhost:5000
+
+$(base)/
+
+
+# siege -c 2 -d 1 -t 10s -f siege
