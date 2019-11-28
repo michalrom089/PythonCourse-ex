@@ -16,12 +16,21 @@ import random
 import logging
 import threading
 
+
+logger = logging.getLogger(__name__)
+logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
 resources = []
 
 
 def producer():
     """ Producer thread, append two item to the resources
     """
+    r = random()
+
+    with cv:
+        
+    logger.info(f"Produced an item:{r}")
+    
     # TODO: complete implementation
     pass
 
@@ -30,6 +39,8 @@ def big_consumer():
     """ Big Consumer thread, consumes three items from the resources
     """
     # TODO: complete implementation
+
+
     pass
 
 
