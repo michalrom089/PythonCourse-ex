@@ -10,11 +10,11 @@ num = 0
 def run(workload):
     global num, m
 
-    with m:
-        time.sleep(0.1)
-        with open('04-mutex-starcation.txt') as f:
-            f.write(workload)
-
+    m.acquire()
+    time.sleep(0.1)
+    with open('04-mutex-starcation.txt') as f:
+        f.write(workload)
+    m.release()
 
 if __name__ == '__main__':
     workers = 5

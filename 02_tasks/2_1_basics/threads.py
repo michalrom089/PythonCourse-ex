@@ -2,14 +2,17 @@ import time
 import threading
 from timeit import default_timer as timer
 
-thread_information=""
+thread_information = ""
 
 
 def run(n):
     global thread_information
     thread_information = "thread"
+    
+    for i in range(10):
+        time.sleep(n)
+        print(i)
 
-    time.sleep(n)
 
 
 if __name__ == '__main__':

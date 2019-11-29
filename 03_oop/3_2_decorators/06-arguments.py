@@ -3,7 +3,7 @@ import logging
 from functools import wraps
 
 
-def logged(level):
+def logged(level, info):
     def decorator(func):
         @wraps(func)
         def wrapped():
@@ -14,7 +14,7 @@ def logged(level):
     return decorator
 
 
-@logged(logging.DEBUG)
+@logged(logging.DEBUG, 'info')
 def hi(name='Steve'):
     print(f"Hi {name}")
 

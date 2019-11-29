@@ -7,7 +7,6 @@ class LoggingDict(dict):
         logging.info(f"Setting {key} equals {value}")
         super().__setitem__(key, value)
 
-
 if __name__ == '__main__':
     logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
 

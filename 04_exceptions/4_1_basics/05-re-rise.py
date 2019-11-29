@@ -28,8 +28,14 @@ def get_speed(s, t):
 if __name__ == "__main__":
     # setup logger
     logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
+    try:
+        speed = get_speed(10, '0')
+    except Exception:
+        print('Something went wrong')
+        return_code = 1
 
-    s = 10
-    t = 0
+    else:
+        print('Program run ok')
+        return_code = 0
 
-    print({'velocity': get_speed(s, t)})
+    exit(return_code)

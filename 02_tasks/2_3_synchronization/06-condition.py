@@ -17,7 +17,7 @@ def produce():
 
 def consume():
     c.acquire()
-    c.wait() # releasing lock until c.notify()
+    c.wait()  # releasing lock until c.notify()
     r = resources.pop(0)
     print(f'Consuming {r}')
     c.release()

@@ -2,12 +2,16 @@ import time
 import multiprocessing
 from timeit import default_timer as timer
 
-# process_information = ""
+process_information = ""
 
 
 def run(n):
-    # global process_information
-    # process_information = 'process'
+    global process_information
+    process_information = 'process'
+
+    for i in range(10):
+        time.sleep(1)
+        print(i)
 
     time.sleep(n)
 

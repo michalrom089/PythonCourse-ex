@@ -9,7 +9,6 @@ def produce():
     r = random()
     resources.append(r)  # appends random number
     print(f"Releasing {r}")
-
     s.release()  # increments internal counter
 
 
@@ -26,7 +25,8 @@ if __name__ == '__main__':
         threading.Thread(target=consume),
         threading.Thread(target=produce),
         threading.Thread(target=produce),
-        threading.Thread(target=produce)
+        threading.Thread(target=produce),
+        threading.Thread(target=consume)
     ]
 
     for t in tasks:

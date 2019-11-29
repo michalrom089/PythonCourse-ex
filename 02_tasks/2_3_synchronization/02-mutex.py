@@ -10,17 +10,18 @@ num = 1
 def run(workload):
     global num, m
 
-    # critical section
-    with m:
-        if num == 1:
-            time.sleep(workload)
-            num = num + 1
+    # critical section`
+    m.acquire()
+    if num == 1:
+        time.sleep(workload)
+        num = num + 1
+    m.release()
   
     return num
 
 
 if __name__ == '__main__':
-    workers = 5
+    workers = 5`
     workload = 0
 
     with ThreadPoolExecutor(max_workers=workers) as executor:

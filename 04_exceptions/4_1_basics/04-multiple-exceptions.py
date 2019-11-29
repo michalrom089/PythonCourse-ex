@@ -10,6 +10,9 @@ def divide(x, y):
        or not isinstance(y, int):
         raise ValueError("Can't divide by non-integer")
 
+    if y < 0:
+        raise Exception('Dividing by negative number')
+
     return x/y
 
 
@@ -18,8 +21,10 @@ if __name__ == "__main__":
     logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
 
     try:
-        divide(1, '0')
+        divide(1, -2)
     except ZeroDivisionError:
         logging.error("Can't divide by 0")
+    except ValueError:
+        logging.error('ValueError was raised')
     except Exception:
-        logging.exception('Unknown exception has been raised.')
+        logging.error('Some other exception was raised.')
